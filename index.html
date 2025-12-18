@@ -1,248 +1,136 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <script src="https://kit.fontawesome.com/2a519cb02c.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CodeMatch — Tinder for Programmers</title>
-  <meta name="description" content="Find your perfect coding partner. Match by languages, frameworks, and interests. Pair program, build projects, and ship together." />
+  <meta name="description" content="Find your perfect coding partner." />
 
- 
+  <script src="https://kit.fontawesome.com/2a519cb02c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <!-- ===== Header / Navigation ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      #
-        <span class="logo-mark">⌘</span>
-        <span class="logo-text">CodeMatch</span>
-      </a>
+</head>
 
-      <nav class="nav">
-        #featuresFeatures</a>
-        #howHow it works</a>
-        <a href="#alsLove from devs</a>
-      </nav>
+<body>
 
-      <div class="header-cta">
-        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-        <i class="fa-solid fa-circle-user"></i>
-      </div>
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">⌘</span>
+      <span class="logo-text">CodeMatch</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#testimonials">Love from devs</a>
+    </nav>
+
+    <div class="header-cta">
+      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i class="fa-solid fa-circle-user"></i>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1>Find your perfect <span class="gradient">coding partner</span></h1>
-        <p class="subhead">
-          Swipe through developers by stack, vibe, and goals.
-          Pair program, join hackathons, or co‑found your next big thing.
-        </p>
-        <div class="cta-row">
-          #signupStart Matching</a>
-          <a class="btn btn-ghost btn-lg"iv>
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>Find your perfect <span class="gradient">coding partner</span></h1>
+      <p class="subhead">
+        Swipe through developers by stack, vibe, and goals.
+      </p>
 
-        <ul class="hero-badges">
-          <li>Match by language: <strong>Python</strong>, <strong>JS</strong>, <strong>Go</strong>, <strong>Rust</strong></li>
-          <li>Link your <strong>GitHub</strong>, <strong>LeetCode</strong>, <strong>Stack Overflow</strong></li>
-          <li>Preferences: <strong>Pair programming</strong>, <strong>Hackathons</strong>, <strong>OSS</strong></li>
-        </ul>
+      <div class="cta-row">
+        <a href="#signup" class="btn btn-primary btn-lg">Start Matching</a>
+        <a href="#demo" class="btn btn-ghost btn-lg">View Demo</a>
       </div>
 
-      <div class="hero-art">
-        <!-- Swipe card mock -->
-        <div class="card-stack">
-          <div class="swipe-card">
-            <div class="card-top">
-              <img class="dicebear.com/9.x/identicon/svg?seed=dev1
-              <div>
-                <h3>Sam • Backend</h3>
-                <p>Python · FastAPI · Postgres</p>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="pill">Open Source</div>
-              <div class="pill">Pair Prog</div>
-              <div class="pill">Remote</div>
-            </div>
-            <div class="card-actions">
-              <button class="btn btn-circle btn-danger" aria-label="Pass">✖</button>
-              <button class="btn btn-circle btn-success" aria-label="Like">❤</button>
+      <ul class="hero-badges">
+        <li><strong>Python</strong>, <strong>JS</strong>, <strong>Go</strong>, <strong>Rust</strong></li>
+        <li>GitHub · LeetCode · Stack Overflow</li>
+        <li>Pair programming · Hackathons · OSS</li>
+      </ul>
+    </div>
+
+    <div class="hero-art">
+      <div class="card-stack">
+        <div class="swipe-card">
+          <div class="card-top">
+            <img class="avatar" src="https://api.dicebear.com/9.x/identicon/svg?seed=dev1" alt="Avatar">
+            <div>
+              <h3>Sam • Backend</h3>
+              <p>Python · FastAPI · Postgres</p>
             </div>
           </div>
-
-          <div class="swipe-card secondary">
-            <div class="card-top">
-              <img class="avatar" src="https://api.dicebear.com/9.x/             <div>
-                <h3>Anika • Frontend</h3>
-                <p>React · TypeScript · Tailwind</p>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="pill">Design‑System</div>
-              <div class="pill">Hackathons</div>
-              <div class="pill">Hybrid</div>
-            </div>
+          <div class="card-body">
+            <span class="pill">Open Source</span>
+            <span class="pill">Pair Prog</span>
+            <span class="pill">Remote</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-circle btn-danger">✖</button>
+            <button class="btn btn-circle btn-success">❤</button>
           </div>
         </div>
-        <small class="art-caption">Swipe UI preview</small>
       </div>
+      <small>Swipe UI preview</small>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== Social Proof / Stats ===== -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat">
-        <div class="stat-value">120k+</div>
-        <div class="stat-label">Developers</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">45k+</div>
-        <div class="stat-label">Project matches</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">2,300+</div>
-        <div class="stat-label">Hackathon teams</div>
-      </div>
+<!-- ===== Features ===== -->
+<section id="features" class="features">
+  <div class="container">
+    <h2>Built for devs, by devs</h2>
+
+    <div class="feature-grid">
+      <article class="feature">
+        <div class="feature-icon">💻</div>
+        <h3>Match by Stack</h3>
+        <p>Languages, frameworks, tools.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">🤝</div>
+        <h3>Pair Programming</h3>
+        <p>Book sessions and ship faster.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">🚀</div>
+        <h3>Hackathons</h3>
+        <p>Find teammates instantly.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">🔗</div>
+        <h3>Integrations</h3>
+        <p>GitHub, LeetCode, Calendars.</p>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== Features ===== -->
-  <section id="features" class="features">
-    <div class="container">
-      <h2>Built for devs, by devs</h2>
+<!-- ===== CTA ===== -->
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <h2>Ready to meet your coding partner?</h2>
+    <a href="#signup" class="btn btn-primary btn-lg">Join — it’s free</a>
+  </div>
+</section>
 
-      <div class="feature-grid">
-        <article class="feature">
-          <div class="feature-icon">💻</div>
-          <h3>Match by Stack</h3>
-          <p>Choose your languages, frameworks, tools, and preferred architecture style.</p>
-          <ul class="tag-list">
-            <li>Python</li><li>Node.js</li><li>React</li><li>Go</li><li>Rust</li><li>AWS</li>
-          </ul>
-        </article>
-
-        <article class="feature">
-          <div class="feature-icon">🤝</div>
-          <h3>Pair Programming</h3>
-          <p>Book 60‑minute sessions with matched partners. Share editor, set goals, and get things done.</p>
-          <ul class="tag-list">
-            <li>Live share</li><li>Pomodoro</li><li>Retros</li>
-          </ul>
-        </article>
-
-        <article class="feature">
-          <div class="feature-icon">🚀</div>
-          <h3>Project & Hackathons</h3>
-          <p>Find teammates for side projects or upcoming hackathons. Match by timezone and commitment.</p>
-          <ul class="tag-list">
-            <li>OSS</li><li>Weekend sprints</li><li>Startup ideas</li>
-          </ul>
-        </article>
-
-        <article class="feature">
-          <div class="feature-icon">🔗</div>
-          <h3>Dev Integrations</h3>
-          <p>Connect GitHub, GitLab, Stack Overflow, LeetCode, and calendars for smoother coordination.</p>
-          <ul class="tag-list">
-            <li>GitHub</li><li>SO</li><li>Calendars</li>
-          </ul>
-        </article>
-      </div>
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <span class="logo-mark">⌘</span>
+      <span class="logo-text">CodeMatch</span>
+      <p>© 2025 CodeMatch</p>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- ===== How it Works ===== -->
-  <section id="how" class="how">
-    <div class="container">
-      <h2>How it works</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">01</div>
-          <h3>Create Profile</h3>
-          <p>Add your stack, interests, availability, and links. Signal what you’re looking for.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">02</div>
-          <h3>Swipe & Match</h3>
-          <p>Discover devs by skill, goals, and vibe. Like, pass, or super‑match with context.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">03</div>
-          <h3>Connect & Code</h3>
-          <p>Book sessions, share repos, and build together. Automatic follow‑ups keep momentum.</p>
-        </div>
-      </div>
-      <div class="steps-cta">
-        #signupCreate your profile</a>
-        #demoExplore matches</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Testimonials ===== -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <h2>Loved by developers</h2>
-      <div class="testimonial-grid">
-        <blockquote class="quote">
-          <p>“Matched with a Rust wizard for a weekend sprint. We shipped a CLI in 48 hours.”</p>
-          <footer>— Priya, DevOps</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <p>“Pair programming sessions helped me learn React faster than any course.”</p>
-          <footer>— Marco, Frontend</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <p>“Found my co‑founder. We met through a Hackathon match and never looked back.”</p>
-          <footer>— Fatima, Backend</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA Banner ===== -->
-  <section class="cta-banner">
-    <div class="container cta-inner">
-      <h2>Ready to meet your perfect coding partner?</h2>
-      <a class="btnp — it’s free</a>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        #<span class="logo-mark">⌘</span><span class="logo-text">CodeMatch</span></a>
-        <p class="foot-note">© 2025 CodeMatch. Built with ❤️ for developers.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul class="link-list">
-          <li>#featuresFeatures</a></li>
-          <li>#howHow it works</a></li>
-          <li>#demoDemo</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul class="link-list">
-          <li><a href="#t</a></li>
-          <li>#careersCareers</a></li>
-          <li>#contactContact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <ul class="link-list">
-          <li>#privacyPrivacy</a></li>
-          <li>#termsTerms</a></li>
-          <li>#securitySecurity</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</</body>
+</body>
+</html>
