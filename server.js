@@ -1,35 +1,33 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
+const bcrypt = require("bcrypt");
+
 const app = express();
-const PORT = 67;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// CSS / JS / images (same folder)
 app.use(express.static(__dirname));
 
-// home page
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// login page
 app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "login.html"));
 });
 
-// login form submit
-app.post("/login", (req, res) => {
+app.post("/login", async (req, res) => {
   const { username, password } = req.body;
+  const users = JSON.parse(fs.readFileSync("users.json"));
 
-  if (username === "admin" && password === "1234") {
-    res.send("✅ Login successful");
-  } else {
-    res.send("❌ Invalid username or password");
-  }
+  const user = users.find(u => u.username === username);
+  if (!user) return res.send("❌ Invalid username");
+
+  const match = await bcrypt.compare(password, user.password);
+  if (match) res.send("✅ Login successful");
+  else res.send("❌ Invalid password");
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
